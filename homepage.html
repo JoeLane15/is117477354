@@ -12,23 +12,71 @@
                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> 
                
                        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+     <style> 
+     body{
+         margin:0; 
+         background:#f2f2f2f;
+     } 
+     .nav{
+         width:100%;
+         background:#000033; 
+         height:80px;
+     } 
+     ul{ 
+    list-style:none; 
+    padding:0;
+    margin:0;
+    position:absolute;
+     } 
+     ul li {
+    float:left;
+    margin-top:20px; 
+     } 
+     ul li a{
+         width:150px; 
+         color:white; 
+         display:block;
+         text-decoration:none;
+         font-size:20px;
+         text-align:center;
+         padding:10px;
+         border-radius:10px;
+         font-family:Century Gothic;
+         font-weight:bold;
+     } 
+     a:hover{ 
+         background:#669900; 
+     }
+     ul li ul {
+         background:#000033;
+     } 
+    ul li ul li{
+         float:none;
+     }
+     ul li ul { 
+         display:none; 
+     }
+ul li:hover ul {
+    diplay:block;
+}
      
+     
+     </style>
      </head> 
     <body>
         <h1 class= "mainheading">117477354- is113 Project! </h1> 
-   
-   <div class="navbar">
-       <div class="item"></div>
-       <div class="fa fa-user"></div> 
-       <div class="label"> Home</div>
-   </div> 
-    <div class="item"></div>
-       <div class="fa fa-home"></div> 
-       <div class="label"> home</div>
-   </div> 
-    <div class="item"></div>
-       <div class="fa fa-picture-o"></div> 
-       <div class="label"> picture</div>
+   <div class="nav">
+    <ul> 
+    <li><a href="#">Home</a></li> 
+    <li><a href="#">CV</a></li> 
+    <li><a href="#">Interests</a></li> 
+    <li><a href="#">interests 1</a></li> 
+    <li><a href="#">interest 2</a></li>
+    </ul> 
    </div>
+  
+  <div id ="hero"> 
+  <div id="hero-overlay"></div>
+  </div>
     </body>
 </html>

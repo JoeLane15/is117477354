@@ -15,68 +15,30 @@
     color:red;
 } 
 
-body { 
-    background-image: url(https://dingo.care2.com/pictures/greenliving/1407/1406075.large.jpg) no-repeat; 
-    background-size: cover; 
-    font-family:arial;
-    color:white; 
-    background-repeat: no-repeat
-} 
-
-@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
-* { 
-    margin:0px;
-    padding:0px;
-    box-sizing: border-box; 
-} 
-.navbar { 
-    position: :fixed;
-    top:0px; 
-    left:0px;
-    width:100px;
-    height:100vh;
-    background:#111;
-    display:flex;
-    flex-direction:column;
-}
-.navbar .item { 
-    flex:1;
-    text-align:center;
-    display:flex;
-    justify-content:center;
-    flex-direction:column; 
-} 
-.navbar .item div.fa {
-    font-size: 25px; 
-    color:#eee;
-    transition:all 100ms ease;
-} 
-.navbar .item div.label { 
-    color:#eee;
+#hero {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_J1XZVhrgEnKh0gIsD5ytYofWHf_fRd-yL931kQaqFhAw-U4s");
+    background-size: cover;
+    background-position: center center;
     position:relative;
-    top:5px;
-    font-size:16px; 
-    font-family:"Oswald";
-    transition:all 300ms cubic-bezier(0.68,-0.55,0.27,1.55);
-    left:-100px; 
+    top:0;
+    bottom:0;
+    height:100vh;
+    z-index:-10;
 }
-.navbar:hover .item .label{ 
-    left:0px;
-} 
-.navbar:hover .item:nth-child(1) div.fa { 
-    color:#e86def; 
+
+#hero-overlay { 
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top:0;
+    bottom:0;
+    height:100%;
+    width:100%;
+    z-index: -5;
 }
-.navbar:hover .item:nth-child(2) div.fa { 
-    color:#79e69d; 
-}
-.navbar:hover .item:nth-child(3) div.fa { 
-    color:#55acee; 
-}
-.navbar:hover .item:nth-child(4) div.fa { 
-    color:#e65d61; 
-}
-        
-        
+
+ 
+
+
         
         
         
