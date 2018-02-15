@@ -14,7 +14,7 @@
      <h4>Select Product</h4> 
      
      <br/> 
-     <form method ="POST" action="Ebus1.php">
+     <form method ="POST" action="Ebus2.php">
          
          <label for="salesforce">
          <input type="radio" id="salesforce" name="Product" checked onClick="<disablebtnProceed()"/>
@@ -33,7 +33,7 @@
      
          <label for="subtotal">
          SubTotal 
-         <input type="text" id="subtotal" name="Product" value="0.00" readonly/>
+         <input type="text" id="subtotal" value="0.00" readonly/>
          </label>
          
          <br/>
