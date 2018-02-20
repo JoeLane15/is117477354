@@ -42,7 +42,8 @@ ul {
     margin:0px;
     padding:0px;
     list-style: none;
-   
+   width:100%;
+   text-align: center;
 }    
 ul li {
     float: left;

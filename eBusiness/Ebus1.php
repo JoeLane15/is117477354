@@ -17,14 +17,14 @@
      <form method ="POST" action="Ebus2.php">
          
          <label for="salesforce">
-         <input type="radio" id="salesforce" name="Product" checked onClick="<disablebtnProceed()"/>
-         SalesForce @ $100
+             <input type="radio" id="salesforce" name="Product" checked onClick="disablebtnProceed()"/>
+             SalesForce @ $100
          </label>
      
          <br/>
      
          <label for ="aws" > 
-         <input type="radio" id="aws" name="product" onClick="<disablebtnProceed()"/>
+         <input type="radio" id="aws" name="product" onClick="disablebtnProceed()"/>
          AWS@ $300
          </label> 
      
@@ -32,7 +32,7 @@
          <br/>
      
          <label for="subtotal">
-         SubTotal 
+         Sub Total 
          <input type="text" id="subtotal" value="0.00" readonly/>
          </label>
          
