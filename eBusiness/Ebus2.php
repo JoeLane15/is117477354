@@ -144,8 +144,11 @@ span.price {
         </div>
         
           <br/>
+           <DIV> <label for="user_pin">PIN</label>
+                    
+                    <input type="password" id="user_pin" placeholder="Card PIN" maxlength="4">
             <button onClick="validateDetails()">Validate and proceed</button>
-        
+        </div>
          
 
              
