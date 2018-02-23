@@ -95,6 +95,8 @@ span.price {
   .col-25 {
     margin-bottom: 20px;
   }
+  
+ 
 }</style>
     </head>
     <body>
@@ -105,7 +107,7 @@ span.price {
                 <div class="row">
   <div class="col-75">
     <div class="container">
-      <form action="/action_page.php">
+      
 
         
           <div class="col-50">
@@ -147,12 +149,12 @@ span.price {
            <DIV> <label for="user_pin">PIN</label>
                     
                     <input type="password" id="user_pin" placeholder="Card PIN" maxlength="4">
-            <button onClick="validateDetails()">Validate and proceed</button>
+           
         </div>
          
 
+              <button type="submit" id="btnPurchase" disabled>Proceed with Purchase</button>
              
-   
      
       
     </div>
@@ -163,7 +165,7 @@ span.price {
   </div>
 </div>
             </form>
-            
+             <button onClick="validateDetails()">Validate </button>
             
             <?php
             // Set session variables
