@@ -109,7 +109,7 @@ span.price {
     <div class="container">
       
 
-        
+        <input type="hidden" name="details" value=</input>
           <div class="col-50">
             <h4>Payment</h4>
             <label for="fname">Accepted Cards</label>
@@ -118,7 +118,9 @@ span.price {
               <i class="fa fa-cc-amex" style="color:blue;"></i>
               <i class="fa fa-cc-mastercard" style="color:red;"></i>
               <i class="fa fa-cc-discover" style="color:orange;"></i>
-            </div>
+            </div> 
+            <label for="Clientname">Client Name</label>
+            <input type="text" id="Clientname" name="Clientname" placeholder="John More Doe">
             <label for="cname">Name on Card</label>
             <input type="text" id="cname" name="cardname" placeholder="John More Doe">
             <label for="ccnum">Credit card number</label>
@@ -137,7 +139,7 @@ span.price {
                 <DIV> <label for="user_pin">PIN</label>
                     
                     <input type="password" id="user_pin" placeholder="Card PIN" maxlength="4">
-
+                  <button type="button" onClick="validateDetails()">Validate </button>
                 </DIV>
               </div>
             </div>
@@ -146,10 +148,8 @@ span.price {
         </div>
         
           <br/>
-           <DIV> <label for="user_pin">PIN</label>
-                    
-                    <input type="password" id="user_pin" placeholder="Card PIN" maxlength="4">
-           
+
+
         </div>
          
 
@@ -165,8 +165,7 @@ span.price {
   </div>
 </div>
             </form>
-             <button onClick="validateDetails()">Validate </button>
-            
+             
             <?php
             // Set session variables
             $_SESSION["total"] = $_POST["total"];

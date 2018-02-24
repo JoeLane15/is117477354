@@ -1,9 +1,15 @@
 #section1{
-    background-color: rgb(238, 0, 90);
+    background-image: url("Images/EiffleTower.jpg"); 
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center; 
 }
 
 #section2{
-    background-color: rgb(44, 62, 80);
+    background-image: url("Images/NewYork1.jpg"); 
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center
 }
 #section3{
     background-color: rgb(51, 153, 204);
