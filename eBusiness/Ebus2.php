@@ -148,12 +148,12 @@ span.price {
         </div>
         
           <br/>
-
+            <button type="submit" id="btnPurchase" disabled>Proceed with Purchase</button>
 
         </div>
          
 
-              <button type="submit" id="btnPurchase" disabled>Proceed with Purchase</button>
+              
              
      
       

@@ -11,40 +11,111 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
    
-        <style>
-            img.rugby{
-                float:right;
-                width:350px;
-                height:200px;
-            } 
-            
-        </style>
-      
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
     </head>
    
     <body> 
     
+            <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+              <button class="w3-bar-item w3-button w3-large"
+              onclick="w3_close()">Close &times;</button> 
+              
+              <button class="w3-button w3-block w3-left-align" onclick="myAccFunc()">
+             <i class="fa fa-caret-down"></i> Cloud Services
+          </button>
+  <div id="demoAcc" class="w3-hide w3-white w3-card">
+              <a href="../CV/Cloud/Amazon.html" class="w3-bar-item w3-button">Amazon</a>
+              <a href="../CV/Cloud/Cloud9.html" class="w3-bar-item w3-button">Cloud9</a>
+              <a href="../CV/Cloud/Drive.html" class="w3-bar-item w3-button">Google Drive</a> 
+              <a href="../CV/Cloud/Dropbox.html" class="w3-bar-item w3-button">Dropbox</a> 
+              <a href="../CV/Cloud/Gmail.html" class="w3-bar-item w3-button">Gmail</a> 
+              <a href="../CV/Cloud/Salesforce.html" class="w3-bar-item w3-button">Salesforce</a> 
+   
+  </div> 
+  
+   <button class="w3-button w3-block w3-left-align" onclick="myFunc()">
+             <i class="fa fa-caret-down"></i>Interests
+          </button>
+  <div id="Acc" class="w3-hide w3-white w3-card">
+              <a href="../Interests/Sports.html" class="w3-bar-item w3-button">Sports</a>
+              <a href="../Interests/travel.html" class="w3-bar-item w3-button">Travel</a>
+           
+  </div>
+              <br>
+              <br>
+               <a href="Ebus1.php" class="w3-bar-item w3-button">Proceed to Checkout</a> 
+               <br>
+              <a href="../homepage.html" class="w3-bar-item w3-button">Return to Homepage</a> 
+               <a href="../eBusiness/lane.html" class="w3-bar-item w3-button">Return to Lane's Cloud Services</a>
+            </div> 
+            
+            <script>
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-green";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace(" w3-green", "");
+    }
+} 
+</script>  
+
+<script>
+function myFunc() {
+    var x = document.getElementById("Acc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-green";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace(" w3-green", "");
+    }
+} 
+</script> 
+
+            
+            <div id="main">
+            
+            <div class="w3-green">
+              <button id="openNav" class="w3-button w3-green w3-xlarge" onclick="w3_open()">&#9776;</button>
+              <div class="w3-container">
+                <h1>Sport</h1>
+              </div>
+            </div>
+            
+            
+            <div class="w3-container">
+            
+            </div>
+            
+            </div>
+            
+            <script>
+            function w3_open() {
+              document.getElementById("main").style.marginLeft = "25%";
+              document.getElementById("mySidebar").style.width = "25%";
+              document.getElementById("mySidebar").style.display = "block";
+              document.getElementById("openNav").style.display = 'none';
+            }
+            function w3_close() {
+              document.getElementById("main").style.marginLeft = "0%";
+              document.getElementById("mySidebar").style.display = "none";
+              document.getElementById("openNav").style.display = "inline-block";
+            }
+            </script>
+
     
     
-     <h1 class="mainheading">Sports</h1>
-     
-     <div id="Navbar">
-              </div> 
-               <div class="nav">
-        <ul> 
-   <li><a href="#">My Interests <i class="fa fa-angle-double-down"></i></a>
-                <ul>
-                    
-                    <li><a href="../Interests/Sports.html"><i class="fa fa-user"></i> Sports</a></li>
-                   <li><a href="../Interests/travel.html"><i class="fa fa-user"></i> Travel </a></li>              
-
-                </ul>
-                </li>
-
-    <li><a href="CV/cv_page1.html"><i class="fa fa-book"></i> Curriculum Vitae</a></li>    
-     <li> <a href="../eBusiness/lane.html">Ebus</a></li>
-    </ul>      
-        </div>
+    
+  
         
         <p class ="text"><strong>Favourite Sport:</strong> Rugby</p>
         <p class ="text"><strong>Favourite team:</strong> Munster RFC</p> 
@@ -53,19 +124,11 @@
         still playing rugby with them. Another one of my sporting passions is weightlifting, I initially began it to improve
         my rugby. However I became more and more infatuated with weightliftng the more I did it.  </p>
         <div>
-        <img src="Images/rugby.jpg" alt="rugby" height="450" width="500">
+        <img src="Images/rugby.jpg" alt="rugby" height="350" width="500" align="center" >
         </div>
-        <br/>
-        <br/>
-        
       
-        <br>
-        <br>
-        <br> 
-        <br>
-         <br>
-           <br> 
-            <br>
+       
+      
         <div style="text-align:right;">
         <a href="travel.html" class="btn">Next</a> 
         </div>

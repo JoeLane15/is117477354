@@ -2,7 +2,8 @@
     text-align:center;
 } 
 .text{
-    text-align:center;
+    text-align:center; 
+   
 }
 .btn {
     background-color: black;
@@ -13,10 +14,26 @@
 
 .btn:hover {
     background-color: #555555;
-    color:red;
+    color:green;
+} 
+.btn{ 
+    float:right; 
 } 
 
+.btn1 {
+    background-color: white;
+    color:black;
+     border: 2px solid #555555; 
+     text-align:center;
+}
 
+.btn1:hover {
+    background-color: #555555;
+    color:green;
+} 
+.btn1{ 
+    float:center; 
+} 
 
 #hero {
     background-image: url("https://i2.wp.com/techbeasts.com/wp-content/uploads/2016/12/Wonderful_Nature_Look_of_Mountain_HD_Photos.jpg");
