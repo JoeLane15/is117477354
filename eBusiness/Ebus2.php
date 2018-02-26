@@ -7,6 +7,8 @@ session_start();
     <head>
         <title>Enter Details</title>
         
+         <link rel="stylesheet" href="../mystylesheet.css" type="text/css" />
+        
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script type="text/javascript" src="Ebus2_validator.js"></script> 
@@ -136,11 +138,11 @@ span.price {
               <div class="col-50">
                 <label for="cvv">CVV</label>
                 <input type="text" id="cvv" name="cvv" placeholder="352"> 
-                <DIV> <label for="user_pin">PIN</label>
+                <label for="user_pin">PIN</label>
                     
                     <input type="password" id="user_pin" placeholder="Card PIN" maxlength="4">
                   <button type="button" onClick="validateDetails()">Validate </button>
-                </DIV>
+              
               </div>
             </div>
           </div>
