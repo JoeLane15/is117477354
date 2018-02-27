@@ -43,8 +43,6 @@ function alphaOnly(e) {
 }
 
 </script>
-
-
         
         <style>.row {
   display: -ms-flexbox; /* IE10 */
@@ -260,9 +258,10 @@ function myAccFunc() {
 
         </div>
         
-          <br/>
+          <br/> 
+          <div class="button">
             <button type="submit" id="btnPurchase" disabled>Proceed with Purchase</button>
-
+          </div>  
         </div>
          
 

@@ -57,9 +57,7 @@
     z-index: -5;
 } 
 
-.btnPurchase{ 
-    float:center;
-}
+
         
 .body{ 
       background-image: url("../Images/brickwall.jpg"); 
@@ -68,8 +66,8 @@
     background-position: center center; 
 }
         
-.ebus1{ 
-   text-align:center; 
+.button{ 
+   float:right; 
     
 }
         
