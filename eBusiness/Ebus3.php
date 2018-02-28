@@ -83,11 +83,20 @@ function myAccFunc() {
 
         <?php
         // Echo session variables that were set on previous page 
-        echo "Client Name: " . $_POST["Clientname"] . "."; ?> 
+        echo "Dear " . $_POST["Clientname"] . ", your order has been confirmed."; ?> 
         <br> 
         <?php
-        echo "Your email address: " . $_POST["email"] . "."; ?>
-        <br>
+        echo "If you have any further questions please email us using, " . $_POST["email"] . ", as this is linked to your account."; ?>
+        <br>  
+        <?php
+         echo "Your subtotal is: $ " . $_SESSION["subtotal"] . "."; ?> 
+         <br>
+         <?php
+          echo "Your discount is: $ " . $_SESSION["discount"] . "."; ?>
+          <br>
+          <?php
+           echo "Your VAT is : $ " . $_SESSION["vat"] . "."; ?> 
+           <br>
       <?php
         echo "Total: $ " . $_SESSION["total"] . "."; ?>
         

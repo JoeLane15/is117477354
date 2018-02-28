@@ -281,6 +281,18 @@ function myAccFunc() {
             <?php
             // Set session variables
             $_SESSION["total"] = $_POST["total"];
+            ?> 
+             <?php
+            // Set session variables
+            $_SESSION["vat"] = $_POST["vat"];
+            ?> 
+             <?php
+            // Set session variables
+            $_SESSION["subtotal"] = $_POST["subtotal"];
+            ?> 
+             <?php
+            // Set session variables
+            $_SESSION["discount"] = $_POST["discount"];
             ?>
         
     </body>
