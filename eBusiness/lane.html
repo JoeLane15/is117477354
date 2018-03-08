@@ -1,89 +1,90 @@
 <!DOCTYPE html>
 <html>
-    <title>W3.CSS</title>
+    <title>Lane's Cloud Services</title> 
+    <!--adding sidebar-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
         <body>
-
-            <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
-              <button class="w3-bar-item w3-button w3-large"
-              onclick="w3_close()">Close &times;</button> 
-              
-              <button class="w3-button w3-block w3-left-align" onclick="myAccFunc()">
-             <i class="fa fa-caret-down"></i> <strong>Cloud Services</strong>
-          </button>
-  <div id="demoAcc" class="w3-hide w3-white w3-card">
-              <a href="../CV/Cloud/Amazon.html" class="w3-bar-item w3-button">Amazon</a>
-              <a href="../CV/Cloud/Cloud9.html" class="w3-bar-item w3-button">Cloud9</a>
-              <a href="../CV/Cloud/Drive.html" class="w3-bar-item w3-button">Google Drive</a> 
-              <a href="../CV/Cloud/Dropbox.html" class="w3-bar-item w3-button">Dropbox</a> 
-              <a href="../CV/Cloud/Gmail.html" class="w3-bar-item w3-button">Gmail</a> 
-              <a href="../CV/Cloud/Salesforce.html" class="w3-bar-item w3-button">Salesforce</a> 
-   
-  </div>
-              <br>
-              <br>
-               <a href="Ebus1.php" class="w3-bar-item w3-button"><strong>Proceed to Checkout</strong></a> 
-               <br>
-              <a href="../homepage.html" class="w3-bar-item w3-button"><strong>Return to Homepage</strong></a> 
-            </div> 
-            
-            <script>
-function myAccFunc() {
-    var x = document.getElementById("demoAcc");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-        x.previousElementSibling.className += " w3-green";
-    } else { 
-        x.className = x.className.replace(" w3-show", "");
-        x.previousElementSibling.className = 
-        x.previousElementSibling.className.replace(" w3-green", "");
-    }
-} 
-</script>
-            
-            <div id="main">
-            
-            <div class="w3-green">
-              <button id="openNav" class="w3-button w3-green w3-xlarge" onclick="w3_open()">&#9776;</button>
-              <div class="w3-container">
-                <h1>Lane's Cloud Services</h1>
-              </div>
-            </div>
-            
-            
-            <div class="w3-container">
-              <h2 class="mainheading">About Us</h2>
-           <p><strong>Where we are based: </strong>Lane's Cloud Services, is a cloud service retailer founded by Joseph Lane in 2015. </p>
-           <p><strong>What we supply: </strong>Lane's Cloud Services sell a number of cloud products such as Salesforce, Cloud9, Amazon Web Services and Gmail. A list of all products and details are located in the sidebar.</p>
-           <br/>
-           <h2 class="mainheading">Contact Details</h2>
-           <p><strong>Office Loactions: </strong>Victoria Lodge, Cork, Apartment 28, room 4</p>
-           <p><strong>Email: </strong>Joseph Lane, CEO: JLane@lanescloud.ie
-           </p>
-           <p><strong>Telephone Number: </strong>Office Number: 022-12345</p> <br/>
-           <br/> <br/>
-           <p><Strong>DISCLAIMER: THIS IS A FICTITIOUS COMPANY AND NONE OF THE ABOVE INFORMATION IS REAL.</Strong></p>
+                    <!--adding sidebar buttons-->
+                    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+                      <button class="w3-bar-item w3-button w3-large"
+                      onclick="w3_close()">Close &times;</button> 
+                      
+                      <button class="w3-button w3-block w3-left-align" onclick="myAccFunc()">
+                     <i class="fa fa-caret-down"></i> <strong>Cloud Services</strong>
+                      </button>
+                      <div id="demoAcc" class="w3-hide w3-white w3-card">
+                      <a href="../CV/Cloud/Amazon.html" class="w3-bar-item w3-button">Amazon</a>
+                      <a href="../CV/Cloud/Cloud9.html" class="w3-bar-item w3-button">Cloud9</a>
+                      <a href="../CV/Cloud/Drive.html" class="w3-bar-item w3-button">Google Drive</a> 
+                      <a href="../CV/Cloud/Dropbox.html" class="w3-bar-item w3-button">Dropbox</a> 
+                      <a href="../CV/Cloud/Gmail.html" class="w3-bar-item w3-button">Gmail</a> 
+                      <a href="../CV/Cloud/Salesforce.html" class="w3-bar-item w3-button">Salesforce</a> 
            
-            </div>
-            
-            </div>
-            
-            <script>
-            function w3_open() {
-              document.getElementById("main").style.marginLeft = "25%";
-              document.getElementById("mySidebar").style.width = "25%";
-              document.getElementById("mySidebar").style.display = "block";
-              document.getElementById("openNav").style.display = 'none';
-            }
-            function w3_close() {
-              document.getElementById("main").style.marginLeft = "0%";
-              document.getElementById("mySidebar").style.display = "none";
-              document.getElementById("openNav").style.display = "inline-block";
-            }
-            </script>
-
+                      </div>
+                      <br>
+                      <br>
+                       <a href="Ebus1.php" class="w3-bar-item w3-button"><strong>Proceed to Checkout</strong></a> 
+                       <br>
+                      <a href="../homepage.html" class="w3-bar-item w3-button"><strong>Return to Homepage</strong></a> 
+                    </div> 
+                    <!--adding sidebar dropdown-->
+                    <script>
+                    function myAccFunc() {
+                        var x = document.getElementById("demoAcc");
+                        if (x.className.indexOf("w3-show") == -1) {
+                            x.className += " w3-show";
+                            x.previousElementSibling.className += " w3-green";
+                        } else { 
+                            x.className = x.className.replace(" w3-show", "");
+                            x.previousElementSibling.className = 
+                            x.previousElementSibling.className.replace(" w3-green", "");
+                        }
+                    } 
+                    </script>
+                    <!--adding details-->
+                    <div id="main">
+                                <div class="w3-green">
+                      <button id="openNav" class="w3-button w3-green w3-xlarge" onclick="w3_open()">&#9776;</button>
+                      <div class="w3-container">
+                        <h1>Lane's Cloud Services</h1>
+                      </div>
+                    </div>
+                    
+                    
+                    <div class="w3-container">
+                      <h2 class="mainheading">About Us</h2>
+                   <p><strong>Where we are based: </strong>Lane's Cloud Services, is a cloud service retailer founded by Joseph Lane in 2015. </p>
+                   <p><strong>What we supply: </strong>Lane's Cloud Services sell a number of cloud products such as Salesforce, Cloud9, Amazon Web Services and Gmail. A list of all products and details are located in the sidebar.</p>
+                   <br/>
+                   <h2 class="mainheading">Contact Details</h2>
+                   <p><strong>Office Loactions: </strong>Victoria Lodge, Cork, Apartment 28, room 4</p>
+                   <p><strong>Email: </strong>Joseph Lane, CEO: JLane@lanescloud.ie
+                   </p>
+                   <p><strong>Telephone Number: </strong>Office Number: 022-12345</p> <br/>
+                   <br/> <br/>
+                   <p><Strong>DISCLAIMER: THIS IS A FICTITIOUS COMPANY AND NONE OF THE ABOVE INFORMATION IS REAL.</Strong></p>
+                   
+                    </div>
+                    
+                    </div>
+                    
+                    <script>
+                    function w3_open() {
+                      document.getElementById("main").style.marginLeft = "25%";
+                      document.getElementById("mySidebar").style.width = "25%";
+                      document.getElementById("mySidebar").style.display = "block";
+                      document.getElementById("openNav").style.display = 'none';
+                    }
+                    function w3_close() {
+                      document.getElementById("main").style.marginLeft = "0%";
+                      document.getElementById("mySidebar").style.display = "none";
+                      document.getElementById("openNav").style.display = "inline-block";
+                    }
+                    </script>
+        
     </body>
 </html>
 

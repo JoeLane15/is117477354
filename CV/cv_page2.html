@@ -1,7 +1,9 @@
 <!DOCTYPE html> 
 <html> 
     <head> 
-        <title>Education</title>
+        <title>Education</title> 
+        
+        <!--Linking to css-->
         <link rel ="stylesheet" href="../mystylesheet.css" type="text/css" /> 
          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <!--Adding Bootstrap-->
@@ -12,114 +14,178 @@
                
                        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
        
+       <!--Adding sidebar-->
        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
+          <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                float:center;
+   
+            }
+            th, td {
+                padding: 5px;
+                text-align: left;    
+            }
+            
+            h3{ 
+                text-align:center;
+            }
+        </style>
      </head> 
      
-     <body> 
-     
-            <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
-              <button class="w3-bar-item w3-button w3-large"
-              onclick="w3_close()">Close &times;</button> 
-             <a href="cv_page1.html" class="w3-bar-item w3-button"><strong>Curriculum Vitae</strong></a> 
-   <button class="w3-button w3-block w3-left-align" onclick="myFunc()">
-             <i class="fa fa-caret-down"></i><strong>Interests</strong>
-          </button>
-  <div id="Acc" class="w3-hide w3-white w3-card">
-      
-             <a href="../Interests/Sports.html" class="w3-bar-item w3-button">Sports</a>
-             <a href="../Interests/travel.html" class="w3-bar-item w3-button">Travel</a>
-           <a href="../Cloud.html" class="w3-bar-item w3-button">Cloud Services</a>
-              
-  </div> 
-                <a href="https://github.com/JoeLane15"  target="_blank" class="w3-bar-item w3-button"><strong>Github</strong></a>
+             <body> 
+                     <!--Sidebar button-->
+                            <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+                              <button class="w3-bar-item w3-button w3-large"
+                              onclick="w3_close()">Close &times;</button> 
+                             <a href="cv_page1.html" class="w3-bar-item w3-button"><strong>Curriculum Vitae</strong></a> 
+                   <button class="w3-button w3-block w3-left-align" onclick="myFunc()">
+                             <i class="fa fa-caret-down"></i><strong>Interests</strong>
+                          </button>
+                  <div id="Acc" class="w3-hide w3-white w3-card">
+                      
+                             <a href="../Interests/Sports.html" class="w3-bar-item w3-button">Sports</a>
+                             <a href="../Interests/travel.html" class="w3-bar-item w3-button">Travel</a>
+                           <a href="../Cloud.html" class="w3-bar-item w3-button">Cloud Services</a>
+                              
+                  </div> 
+                                 <a href="https://dashboard.heroku.com/apps"  target="_blank" class="w3-bar-item w3-button"><strong>Heroku</strong></a>
+                
+                                <a href="https://github.com/JoeLane15"  target="_blank" class="w3-bar-item w3-button"><strong>Github</strong></a>
+                
+                                 <a href="../eBusiness/lane.html" class="w3-bar-item w3-button"><strong>Lane's Cloud Services</strong></a>
+                 <br>
+                                <a href="../homepage.html" class="w3-bar-item w3-button"><strong>Return to Homepage</strong></a>
+                              
+                              
+                               <br> 
+                
+                            </div>
+                            <!--Dropdown function-->
+                            <script>
+                function myAccFunc() {
+                    var x = document.getElementById("demoAcc");
+                    if (x.className.indexOf("w3-show") == -1) {
+                        x.className += " w3-show";
+                        x.previousElementSibling.className += " w3-green";
+                    } else { 
+                        x.className = x.className.replace(" w3-show", "");
+                        x.previousElementSibling.className = 
+                        x.previousElementSibling.className.replace(" w3-green", "");
+                    }
+                } 
+                </script> 
+                
+                <script>
+                function myFunc() {
+                    var x = document.getElementById("Acc");
+                    if (x.className.indexOf("w3-show") == -1) {
+                        x.className += " w3-show";
+                        x.previousElementSibling.className += " w3-green";
+                    } else { 
+                        x.className = x.className.replace(" w3-show", "");
+                        x.previousElementSibling.className = 
+                        x.previousElementSibling.className.replace(" w3-green", "");
+                    }
+                } 
+                </script> 
+                
+                            
+                            <!--Adding my education details-->
+                            <div id="main">
+                            
+                            <div class="w3-green">
+                              <button id="openNav" class="w3-button w3-green w3-xlarge" onclick="w3_open()">&#9776;</button>
+                              <div class="w3-container">
+                                <h1>Education Details</h1>
+                              </div>
+                            </div>
+                            
+                            
+                            <div class="w3-container">
+                            
+                            </div>
+                            
+                            </div>
+                            
+                            <script>
+                            function w3_open() {
+                              document.getElementById("main").style.marginLeft = "25%";
+                              document.getElementById("mySidebar").style.width = "25%";
+                              document.getElementById("mySidebar").style.display = "block";
+                              document.getElementById("openNav").style.display = 'none';
+                            }
+                            function w3_close() {
+                              document.getElementById("main").style.marginLeft = "0%";
+                              document.getElementById("mySidebar").style.display = "none";
+                              document.getElementById("openNav").style.display = "inline-block";
+                            }
+                            </script> 
+                            
+                
+                    
+                
+                         
+                         <p class ="text"><strong>College:</strong>UCC</p>
+                         <p class ="text"><strong>Course:</strong>BIS</p>
+                         <p class ="text"><strong>Year:</strong>2017-2021</p> 
+                         
+                         <br/> 
+                         
+                         <p class ="text"><strong>Secondary School:</strong> Patrician Academy Mallow</p>
+                         <p class ="text"><strong>Year:</strong>2011-2017</p>
+                         
+                         <br>
+                        <h3><strong> Leaving Certificate Results</strong></h3>
+                         <table style="width:75%" align="center">
+                              <tr>
+                                <th>Subject</th>
+                                <th>Level</th> 
+                                <th>Grade</th>
+                              </tr>
+                              <tr>
+                                <td>Maths</td>
+                                <td>Honours</td>
+                                <td>H5</td> 
+                             </tr> 
+                              <tr>
+                                <td>English</td>
+                                <td>Honours</td>
+                                <td>H4</td> 
+                             </tr> 
+                              <tr>
+                                <td>Irish</td>
+                                <td>Ordinary</td>
+                                <td>O4</td> 
+                             </tr>
+                              <tr>
+                                <td>Economics</td>
+                                <td>Honours</td>
+                                <td>H2</td> 
+                             </tr>
+                              <tr>
+                                <td>Accounting</td>
+                                <td>Honours</td>
+                                <td>H3</td> 
+                             </tr>
+                              <tr>
+                                <td>Business</td>
+                                <td>Honours</td>
+                                <td>H3</td> 
+                             </tr>
+                              <tr>
+                                <td>Construction Studies</td>
+                                <td>Honours</td>
+                                <td>H2</td> 
+                             </tr>
+                        </table>
 
-                 <a href="../eBusiness/lane.html" class="w3-bar-item w3-button"><strong>Lane's Cloud Services</strong></a>
- <br>
-                <a href="../homepage.html" class="w3-bar-item w3-button"><strong>Return to Homepage</strong></a>
-              
-              
-               <br> 
-
-            </div>
-            
-            <script>
-function myAccFunc() {
-    var x = document.getElementById("demoAcc");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-        x.previousElementSibling.className += " w3-green";
-    } else { 
-        x.className = x.className.replace(" w3-show", "");
-        x.previousElementSibling.className = 
-        x.previousElementSibling.className.replace(" w3-green", "");
-    }
-} 
-</script> 
-
-<script>
-function myFunc() {
-    var x = document.getElementById("Acc");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-        x.previousElementSibling.className += " w3-green";
-    } else { 
-        x.className = x.className.replace(" w3-show", "");
-        x.previousElementSibling.className = 
-        x.previousElementSibling.className.replace(" w3-green", "");
-    }
-} 
-</script> 
-
-            
-            
-            <div id="main">
-            
-            <div class="w3-green">
-              <button id="openNav" class="w3-button w3-green w3-xlarge" onclick="w3_open()">&#9776;</button>
-              <div class="w3-container">
-                <h1>Education Details</h1>
-              </div>
-            </div>
-            
-            
-            <div class="w3-container">
-            
-            </div>
-            
-            </div>
-            
-            <script>
-            function w3_open() {
-              document.getElementById("main").style.marginLeft = "25%";
-              document.getElementById("mySidebar").style.width = "25%";
-              document.getElementById("mySidebar").style.display = "block";
-              document.getElementById("openNav").style.display = 'none';
-            }
-            function w3_close() {
-              document.getElementById("main").style.marginLeft = "0%";
-              document.getElementById("mySidebar").style.display = "none";
-              document.getElementById("openNav").style.display = "inline-block";
-            }
-            </script> 
-            
-
-    
-
-         
-         <p class ="text"><strong>College:</strong>UCC</p>
-         <p class ="text"><strong>Course:</strong>BIS</p>
-         <p class ="text"><strong>Year:</strong>2017-2021</p> 
-         
-         <br/> 
-         
-         <p class ="text"><strong>Secondary School:</strong> Patrician Academy Mallow</p>
-         <p class ="text"><strong>Year:</strong>2011-2017</p>
-         
-     
-         <a href="cv_page3.html"   class="btn">Next</a>
-     
+                     
+                         <a href="cv_page3.html"   class="btn">Work</a>
+                     
           </body>
-                </html>
+</html>

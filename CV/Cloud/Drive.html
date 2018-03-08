@@ -1,95 +1,97 @@
 <!DOCTYPE html>
 <html>
-<title>Google Drive</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<body>
-<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar"> 
-  <button class="w3-bar-item w3-button w3-large"
-                              onclick="w3_close()">Close &times;</button> 
-              <button class="w3-button w3-block w3-left-align" onclick="myAccFunc()">
-                                <i class="fa fa-caret-down"></i> <strong>Cloud Services </strong>
-                            </button>
-                  <div id="demoAcc" class="w3-hide w3-white w3-card">
-                               <a href="Amazon.html" class="w3-bar-item w3-button">Amazon</a>
-                  <a href="Cloud9.html" class="w3-bar-item w3-button">Cloud9</a>
-                  <a href="Drive.html" class="w3-bar-item w3-button">Google Drive</a> 
-                  <a href="Dropbox.html" class="w3-bar-item w3-button">Dropbox</a> 
-                  <a href="Gmail.html" class="w3-bar-item w3-button">Gmail</a> 
-                  <a href="Salesforce.html" class="w3-bar-item w3-button">Salesforce</a> 
-                   
+    <title>Google Drive</title> 
+    <!--adding sidebar-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <body>
+                    <!--adding sidebar button-->
+                <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar"> 
+                  <button class="w3-bar-item w3-button w3-large"
+                                              onclick="w3_close()">Close &times;</button> 
+                              <button class="w3-button w3-block w3-left-align" onclick="myAccFunc()">
+                                                <i class="fa fa-caret-down"></i> <strong>Cloud Services </strong>
+                                            </button>
+                                  <div id="demoAcc" class="w3-hide w3-white w3-card">
+                                               <a href="Amazon.html" class="w3-bar-item w3-button">Amazon</a>
+                                  <a href="Cloud9.html" class="w3-bar-item w3-button">Cloud9</a>
+                                  <a href="Drive.html" class="w3-bar-item w3-button">Google Drive</a> 
+                                  <a href="Dropbox.html" class="w3-bar-item w3-button">Dropbox</a> 
+                                  <a href="Gmail.html" class="w3-bar-item w3-button">Gmail</a> 
+                                  <a href="Salesforce.html" class="w3-bar-item w3-button">Salesforce</a> 
+                                   
+                                  </div>
+                                           <br>
+                                              <br>
+                                               <a href="../../eBusiness/Ebus1.php" class="w3-bar-item w3-button"> <strong>Proceed to Checkout</strong></a> 
+                                               <br>
+                                  <a href="../../homepage.html" class="w3-bar-item w3-button"> <strong>Return to Homepage</strong></a>
+                                   <a href="../../eBusiness/lane.html" class="w3-bar-item w3-button"> <strong>Return to Lane's Cloud Services</strong></a>
+                                </div>
+                <!--adding dropdown function-->
+                            <script>
+                function myAccFunc() {
+                    var x = document.getElementById("demoAcc");
+                    if (x.className.indexOf("w3-show") == -1) {
+                        x.className += " w3-show";
+                        x.previousElementSibling.className += " w3-green";
+                    } else { 
+                        x.className = x.className.replace(" w3-show", "");
+                        x.previousElementSibling.className = 
+                        x.previousElementSibling.className.replace(" w3-green", "");
+                    }
+                } 
+                </script>
+                      <!--adding page details-->      
+                <div id="main">
+                
+                <div class="w3-green">
+                  <button id="openNav" class="w3-button w3-green w3-xlarge" onclick="w3_open()">&#9776;</button>
+                  <div class="w3-container">
+                    <h1>Google Drive</h1> 
+                    
                   </div>
-                           <br>
-                              <br>
-                               <a href="../../eBusiness/Ebus1.php" class="w3-bar-item w3-button"> <strong>Proceed to Checkout</strong></a> 
-                               <br>
-                  <a href="../../homepage.html" class="w3-bar-item w3-button"> <strong>Return to Homepage</strong></a>
-                   <a href="../../eBusiness/lane.html" class="w3-bar-item w3-button"> <strong>Return to Lane's Cloud Services</strong></a>
                 </div>
-
-            <script>
-function myAccFunc() {
-    var x = document.getElementById("demoAcc");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-        x.previousElementSibling.className += " w3-green";
-    } else { 
-        x.className = x.className.replace(" w3-show", "");
-        x.previousElementSibling.className = 
-        x.previousElementSibling.className.replace(" w3-green", "");
-    }
-} 
-</script>
-            
-<div id="main">
-
-<div class="w3-green">
-  <button id="openNav" class="w3-button w3-green w3-xlarge" onclick="w3_open()">&#9776;</button>
-  <div class="w3-container">
-    <h1>Google Drive</h1> 
-    
-  </div>
-</div>
-
-
-<div class="w3-container">
-<p>Google Drive was founded in 2012 as a file storage and synchronization serivce developed by Google. 
-    </p> 
-    <br>
-            <p class ="text"><strong>How it Works:</strong></p> 
-            <p>This service allows users to store their files on their servers, synchronize files across 
-            devices, and share files. Users can also avail of Google Docs, Sheets and Slides and an Office 
-            suite. These features allow collaborative editing of documents, spreadsheets, presentations, drawings, forms and more.
-            The user get 15 gigabytes of free storage, with up to 30 terabytes offered through optional paid plans.</p>
-
-<a href="https://www.google.com/drive/" target="_blank">
-<img src="data:image/png;base64,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"
-alt="Google Drive"
-width="450"
-height="250"
-align= "right"/> 
- </a>
-
-
-
-</div>
-
-</div>
-
-<script>
-function w3_open() {
-  document.getElementById("main").style.marginLeft = "25%";
-  document.getElementById("mySidebar").style.width = "25%";
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("openNav").style.display = 'none';
-}
-function w3_close() {
-  document.getElementById("main").style.marginLeft = "0%";
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("openNav").style.display = "inline-block";
-}
-</script>
-
-</body>
+                
+                
+                <div class="w3-container">
+                <p>Google Drive was founded in 2012 as a file storage and synchronization serivce developed by Google. 
+                    </p> 
+                    <br>
+                            <p class ="text"><strong>How it Works:</strong></p> 
+                            <p>This service allows users to store their files on their servers, synchronize files across 
+                            devices, and share files. Users can also avail of Google Docs, Sheets and Slides and an Office 
+                            suite. These features allow collaborative editing of documents, spreadsheets, presentations, drawings, forms and more.
+                            The user get 15 gigabytes of free storage, with up to 30 terabytes offered through optional paid plans.</p>
+                
+                <a href="https://www.google.com/drive/" target="_blank">
+                <img src="data:image/png;base64,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"
+                alt="Google Drive"
+                width="450"
+                height="250"
+                align= "right"/> 
+                 </a>
+                
+                
+                
+                </div>
+                
+                </div>
+                
+                <script>
+                function w3_open() {
+                  document.getElementById("main").style.marginLeft = "25%";
+                  document.getElementById("mySidebar").style.width = "25%";
+                  document.getElementById("mySidebar").style.display = "block";
+                  document.getElementById("openNav").style.display = 'none';
+                }
+                function w3_close() {
+                  document.getElementById("main").style.marginLeft = "0%";
+                  document.getElementById("mySidebar").style.display = "none";
+                  document.getElementById("openNav").style.display = "inline-block";
+                }
+                </script>
+                
+        </body>
 </html>
